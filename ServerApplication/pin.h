@@ -12,6 +12,7 @@ public:
     Pin(int pin, int dir, int pull_up);
     void set(int Option);
     int getValue(void);
+    void changeDir(void);
 
 private:
     int pin_nr;
