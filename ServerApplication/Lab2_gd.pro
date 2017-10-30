@@ -12,8 +12,12 @@ TEMPLATE = app
 SOURCES += \
     bcm2835_stub.cpp \
     blink.cpp \
-    pin.cpp
+    pin.cpp \
+    pwm_example.cpp \
+    pwm.cpp \
+    pwm_underbutton.cpp
 
 HEADERS += \
     bcm2835.h \
-    pin.h
+    pin.h \
+    pwm.h

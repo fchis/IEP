@@ -24,7 +24,7 @@
 #define ON  1
 #define OFF 0
 
-int main(int argc, char **argv)
+int blink(int argc, char **argv)
 {
     // If you call this, it will not actually access the GPIO
     // Use for testing
