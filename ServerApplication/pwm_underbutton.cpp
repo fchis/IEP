@@ -20,7 +20,7 @@ void normal_code(Pwm pwm_to_use, Pin button)
 {
     if(button.get_eds())
     {
-        /** Button is pressed */
+        /** Button is pressed :)*/
         button.set_eds();
         pwm_to_use.setDutyCycle(pwm_to_use.getDutyCycle() + STEP);
     }
