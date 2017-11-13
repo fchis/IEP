@@ -42,6 +42,7 @@ int main(int argc, char **argv)
     /** RPI_GPIO_P1_11 - 17
      *  BCM2835_GPIO_FSEL_ALT5 - allow PWM channel 0 to be output there
      *  0 - no relevance in this case */
+    bcm2835_init();
     Pin pin_to_use =  Pin(PIN,BCM2835_GPIO_FSEL_ALT5);
     Pin button = Pin(PIN_BUTTON, BCM2835_GPIO_FSEL_INPT, BCM2835_GPIO_PUD_UP);
     button.enable_Low();

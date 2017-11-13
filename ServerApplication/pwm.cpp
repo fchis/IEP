@@ -22,7 +22,7 @@ Pwm::Pwm(int frequency, int dutycycle, int channel, int range)
 }
 
 
-/** Method used to set the PWM output, important value must be lower than the range */
+/** Method used to set the PWM output, important value must be lower than the range :)*/
 void Pwm::setDutyCycle(int targetDutyCycle)
 {
     if(targetDutyCycle > this->range)
@@ -47,7 +47,7 @@ void Pwm::setFrequency(int targetFrequency)
 
 
 /** Method used to get the actual PWM dutycycle */
-int Pwm::getDutyCycle(int percentage)
+int Pwm::getDutyCycle()
 {
     return this->dutycycle*100/this->frequency;
 }
