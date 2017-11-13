@@ -32,7 +32,7 @@ void Pwm::setDutyCycle(int targetDutyCycle)
     }
     else
     {
-        this->dutycycle = targetDutyCycle;
+        this->dutycycle = targetDutyCycle*this->range/100;
     }
 
     bcm2835_pwm_set_data(this->channel, this->dutycycle);
@@ -47,9 +47,9 @@ void Pwm::setFrequency(int targetFrequency)
 
 
 /** Method used to get the actual PWM dutycycle */
-int Pwm::getDutyCycle(void)
+int Pwm::getDutyCycle(int percentage)
 {
-    return this->dutycycle;
+    return this->dutycycle*100/this->frequency;
 }
 
 

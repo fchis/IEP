@@ -13,7 +13,7 @@
 // This controls the max range of the PWM signal
 #define RANGE 1000
 
-#define STEP 100 /** 100 means 10% */
+#define STEP 10 
 
 
 void normal_code(Pwm pwm_to_use, Pin button)
